@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/maxt026/weather-app'
+                git url: 'https://github.com/maxt026/new'
                 build job: 'new_job', propagate: true, wait: true
             }
         }
